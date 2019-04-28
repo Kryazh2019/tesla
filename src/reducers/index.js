@@ -30,11 +30,10 @@ const updateOrder = (state, carName, quantity) => {
   const { cars, cartItems } = state;
   const car = cars.find(car => car.name === carName);
   const itemIndex = cartItems.findIndex(({ name }) => name === carName);
-
   const item = state.cartItems[itemIndex];
   const newItem = updateCartItem(car, item, quantity);
   return {
-    orderTotal: 0,
+    ...state,
     cartItems: updateCartItems(cartItems, newItem, itemIndex)
   };
 };

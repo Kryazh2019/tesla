@@ -12,6 +12,7 @@ const CarList = ({ cars, onAddedToCart }) => {
   return (
     <ul className="car-list">
       {cars.map(car => {
+        console.log(car);
         return (
           <li>
             <CarListItem
