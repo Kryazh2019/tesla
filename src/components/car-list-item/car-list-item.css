@@ -1,0 +1,36 @@
+.car-list-item {
+  display: flex;
+  margin: 15px 0;
+  margin-bottom: 25px;
+}
+
+.car-list-item .car-cover {
+  flex-shrink: 0;
+  max-width: 20%;
+  margin-right: 30px;
+}
+.car-description {
+  max-width: 50%;
+}
+.car-list-item .car-cover img {
+  max-width: 100%;
+}
+.car-racing {
+  font-weight: bold;
+}
+
+.car-list-item .car-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: flex-start;
+}
+
+.car-list-item .car-details .car-title {
+  font-size: 1.2rem;
+}
+
+.car-list-item .car-details .car-price {
+  font-size: 1.4rem;
+}
